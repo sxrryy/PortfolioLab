@@ -5,17 +5,17 @@ function Organizations() {
   const organizations = [
     [
       "Fundacja 'Lorem Ipsum'",
-      "Organizacja pozarządowa 1",
-      "Lokalna zbiórka 1",
-    ],
-    [
       "Fundacja 'Dolor Sit Amet'",
-      "Organizacja pozarządowa 2",
-      "Lokalna zbiórka 2",
+      "Fundacja 'Consectetur Adipiscing'",
     ],
     [
-      "Fundacja 'Consectetur Adipiscing'",
+      "Organizacja pozarządowa 1",
+      "Organizacja pozarządowa 2",
       "Organizacja pozarządowa 3",
+    ],
+    [
+      "Lokalna zbiórka 1",
+      "Lokalna zbiórka 2",
       "Lokalna zbiórka 3",
     ],
   ];
@@ -25,7 +25,9 @@ function Organizations() {
   };
 
   return (
-    <div>
+    <div><h2 className="text-3xl mb-4 flex justify-center">Komu pomagamy?</h2><div className="flex justify-center m-10">
+    <img src="../assets/Decoration.svg"></img>
+  </div>
       <div className="flex justify-center mb-4">
         <button
           onClick={() => handlePageChange(1)}
@@ -48,7 +50,7 @@ function Organizations() {
       </div>
       <div>
         {organizations[page - 1].map((org, index) => (
-          <p key={index} className="my-2">
+          <p key={index} className="my-2 flex justify-center">
             {org}
           </p>
         ))}

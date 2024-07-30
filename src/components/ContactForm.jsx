@@ -1,50 +1,41 @@
-import { useState } from "react";
+import React from 'react';
 
 function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Walidacja później tutaj
-  };
-
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <div>
-        <label className="block">Wpisz swoje imię</label>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="w-full p-2 border"
-        />
+    <div className="container mx-auto my-8 flex items-center">
+      <div
+          className="left-0 top-0 w-1/2 h-full bg-cover bg-left"
+          style={{ backgroundImage: "url('../assets/Background-Contact-Form.jpg')" }}
+        ></div>
+      <div className="w-1/2 p-8">
+        <form className="max-w-lg mx-auto">
+          <h2 className="text-3xl mb-4">Kontakt</h2>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+              Imię
+            </label>
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Twoje imię" />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+              Email
+            </label>
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Twój email" />
+          </div>
+          <div className="mb-6">
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+              Wiadomość
+            </label>
+            <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Twoja wiadomość"></textarea>
+          </div>
+          <div className="flex items-center justify-between">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+              Wyślij
+            </button>
+          </div>
+        </form>
       </div>
-      <div>
-        <label className="block">Wpisz swój email</label>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="w-full p-2 border"
-        />
-      </div>
-      <div>
-        <label className="block">Wpisz swoją wiadomość</label>
-        <textarea
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          className="w-full p-2 border"
-        />
-      </div>
-      <button
-        type="submit"
-        className="bg-white border border-black border-solid text-black p-2"
-      >
-        Wyślij
-      </button>
-    </form>
+    </div>
   );
 }
 

@@ -1,21 +1,29 @@
-import Header from "../components/Header";
-import ContactForm from "../components/ContactForm";
-import Organizations from "../components/Organizations";
+import React from 'react';
+import Banner from '../components/Banner';
+import Steps from '../components/Steps';
+import Organizations from '../components/Organizations';
+import ContactForm from '../components/ContactForm';
+import AboutUs from '../components/AboutUs';
+import Statistics from '../components/Statistics';
 
 function Home() {
   return (
     <div>
-      <Header />
+      <Banner />
+      <Statistics />
       <main className="container mx-auto p-4">
+        <Steps />
+        <AboutUs />
         <section>
-          <h2 className="text-2xl mb-4">Komu pomagamy?</h2>
+          
           <Organizations />
         </section>
         <section className="mt-8">
-          <h2 className="text-2xl mb-4">Kontakt</h2>
+          
           <ContactForm />
         </section>
       </main>
+      
     </div>
   );
 }
