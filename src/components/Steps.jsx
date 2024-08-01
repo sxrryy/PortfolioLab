@@ -32,9 +32,9 @@ function Steps() {
   ];
 
   return (
-    <div id="steps" className="container mx-auto my-20">
-      <h2 className="text-3xl text-center mb-8">Wystarczą 4 proste kroki</h2>
-      <div className="flex justify-center">
+    <div id="steps" className="container mx-auto mt-36 my-20">
+      <h2 className="text-3xl mb-3 text-center">Wystarczą 4 proste kroki</h2>
+      <div className="flex justify-center mb-10">
         <img src="../assets/Decoration.svg"></img>
       </div>
       <div className="flex justify-around bg-gray-200 py-8">

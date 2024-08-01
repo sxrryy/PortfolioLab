@@ -10,18 +10,21 @@ function Banner() {
     };
 
     return (
-      <div className="h-64 flex items-center justify-end bg-gray-100 overflow-hidden">
-        <div
-          className="container absolute left-0 top-0 w-1/2 h-1/2 bg-auto bg-left"
-          style={{ backgroundImage: "url('../assets/Home-Hero-Image.jpg')" }}
-        ></div>
-        <div className="relative w-1/2 flex flex-col items-start justify-center p-8">
-          <h2 className="text-4xl mb-4">Zacznij pomagać!</h2>
-          <p className="text-xl">Oddaj niechciane rzeczy w zaufane ręce</p>
-          <div className="flex justify-center m-3">
+      <div
+        className="relative max-w-8xl mx-auto mt-10 h-96 lg:h-auto bg-contain bg-no-repeat overflow-hidden"
+        style={{
+          height: "750px",
+          backgroundImage: "url('../assets/Home-Hero-Image.jpg')",
+        }}
+      >
+        <div className="absolute inset-0"></div>
+        <div className="relative w-full lg:w-2/3 p-12 flex-col justify-center text-center ml-auto">
+          <h2 className="text-4xl mb-8">
+            Zacznij pomagać!<br></br>Oddaj niechciane rzeczy w zaufane ręce.
+          </h2>
+          <div className="flex justify-center mb-10">
             <img src="../assets/Decoration.svg"></img>
           </div>
-          <br></br>
           <button
             onClick={handleLoginRedirect}
             className="bg-white text-black border border-solid border-black p-2 m-3"

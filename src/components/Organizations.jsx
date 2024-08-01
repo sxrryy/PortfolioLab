@@ -13,11 +13,7 @@ function Organizations() {
       "Organizacja pozarządowa 2",
       "Organizacja pozarządowa 3",
     ],
-    [
-      "Lokalna zbiórka 1",
-      "Lokalna zbiórka 2",
-      "Lokalna zbiórka 3",
-    ],
+    ["Lokalna zbiórka 1", "Lokalna zbiórka 2", "Lokalna zbiórka 3"],
   ];
 
   const handlePageChange = (newPage) => {
@@ -25,9 +21,13 @@ function Organizations() {
   };
 
   return (
-    <div id="organizations"><h2 className="text-3xl mb-4 flex justify-center">Komu pomagamy?</h2><div className="flex justify-center m-10">
-    <img src="../assets/Decoration.svg"></img>
-  </div>
+    <div id="organizations">
+      <h2 className="text-3xl mt-36 mb-4 flex justify-center">
+        Komu pomagamy?
+      </h2>
+      <div className="flex justify-center mb-10">
+        <img src="../assets/Decoration.svg"></img>
+      </div>
       <div className="flex justify-center mb-4">
         <button
           onClick={() => handlePageChange(1)}
@@ -48,7 +48,7 @@ function Organizations() {
           Lokalne zbiórki
         </button>
       </div>
-      <div>
+      <div className="mb-36">
         {organizations[page - 1].map((org, index) => (
           <p key={index} className="my-2 flex justify-center">
             {org}
