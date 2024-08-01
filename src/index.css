@@ -33,10 +33,6 @@ header nav a {
   color: #ecf0f1;
 }
 
-header nav a:hover {
-  border: 0.5px solid black;
-}
-
 .banner {
   height: 400px;
   display: flex;
