@@ -1,10 +1,10 @@
-import React from 'react';
-import Banner from '../components/Banner';
-import Steps from '../components/Steps';
-import Organizations from '../components/Organizations';
-import ContactForm from '../components/ContactForm';
-import AboutUs from '../components/AboutUs';
-import Statistics from '../components/Statistics';
+import React from "react";
+import Banner from "../components/Banner";
+import Steps from "../components/Steps";
+import Organizations from "../components/Organizations";
+import ContactForm from "../components/ContactForm";
+import AboutUs from "../components/AboutUs";
+import Statistics from "../components/Statistics";
 
 function Home() {
   return (
@@ -15,15 +15,12 @@ function Home() {
         <Steps />
         <AboutUs />
         <section>
-          
           <Organizations />
         </section>
         <section className="mt-8">
-          
           <ContactForm />
         </section>
       </main>
-      
     </div>
   );
 }

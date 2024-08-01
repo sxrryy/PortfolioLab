@@ -3,15 +3,15 @@ import { Link as RouterLink, useNavigate, useLocation } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 function Header() {
-
-  const linkClasses = "text-black text-lg mx-1 pl-3 pr-3 pt-1 pb-1 border-2 cursor-pointer border-transparent hover:border-black transition-colors duration-300";
+  const linkClasses =
+    "text-black text-lg mx-1 pl-3 pr-3 pt-1 pb-1 border-2 cursor-pointer border-transparent hover:border-black transition-colors duration-300";
 
   const navigate = useNavigate();
   const location = useLocation();
 
   const handleClick = (to) => {
-    if (location.pathname !== '/') {
-      navigate('/');
+    if (location.pathname !== "/") {
+      navigate("/");
       setTimeout(() => {
         scroll.scrollTo(document.getElementById(to).offsetTop, {
           duration: 500,
@@ -24,7 +24,7 @@ function Header() {
   return (
     <header className="bg-white p-4">
       <nav className="container mx-auto flex flex-col items-end">
-      <div className="flex justify-end w-full mb-2">
+        <div className="flex justify-end w-full mb-2">
           <RouterLink to="/login" className={linkClasses}>
             Zaloguj
           </RouterLink>
@@ -36,39 +36,39 @@ function Header() {
           <RouterLink to="/" className={linkClasses}>
             Start
           </RouterLink>
-          <ScrollLink 
+          <ScrollLink
             to="steps"
             smooth={true}
             duration={500}
             className={linkClasses}
-            onClick={() => handleClick('steps')}
+            onClick={() => handleClick("steps")}
           >
             O co chodzi?
           </ScrollLink>
-          <ScrollLink 
+          <ScrollLink
             to="aboutus"
             smooth={true}
             duration={500}
             className={linkClasses}
-            onClick={() => handleClick('aboutus')}
+            onClick={() => handleClick("aboutus")}
           >
             O nas
           </ScrollLink>
-          <ScrollLink 
+          <ScrollLink
             to="organizations"
             smooth={true}
             duration={500}
             className={linkClasses}
-            onClick={() => handleClick('organizations')}
+            onClick={() => handleClick("organizations")}
           >
             Fundacja i organizacje
           </ScrollLink>
-          <ScrollLink 
+          <ScrollLink
             to="contact"
             smooth={true}
             duration={500}
             className={linkClasses}
-            onClick={() => handleClick('contact')}
+            onClick={() => handleClick("contact")}
           >
             Kontakt
           </ScrollLink>
