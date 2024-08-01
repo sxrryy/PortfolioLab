@@ -2,6 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
+  const scrollToSection = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="bg-white p-4">
       <nav className="container mx-auto flex flex-col items-end">
@@ -17,18 +24,18 @@ function Header() {
           <Link to="/" className="text-black text-lg mx-2">
             Start
           </Link>
-          <Link to="/about" className="text-black text-lg mx-2">
+          <a href="#steps" onClick={() => scrollToSection('steps')} className="text-black text-lg mx-2">
             O co chodzi?
-          </Link>
-          <Link to="/about-us" className="text-black text-lg mx-2">
+          </a>
+          <a href="#aboutus" onClick={() => scrollToSection('aboutus')} className="text-black text-lg mx-2">
             O nas
-          </Link>
-          <Link to="/organizations" className="text-black text-lg mx-2">
+          </a>
+          <a href="#organizations" onClick={() => scrollToSection('organizations')} className="text-black text-lg mx-2">
             Fundacja i organizacje
-          </Link>
-          <Link to="/contact" className="text-black text-lg mx-2">
+          </a>
+          <a href="#contact" onClick={() => scrollToSection('contact')} className="text-black text-lg mx-2">
             Kontakt
-          </Link>
+          </a>
         </div>
       </nav>
     </header>

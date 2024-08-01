@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutUs() {
   return (
-    <div className="container bg-gray-200 mx-auto my-8 flex items-center justify-between">
+    <div id="aboutus" className="container bg-gray-200 mx-auto my-8 flex items-center justify-between">
       <div className="w-1/2 p-4">
         <h2 className="text-3xl mb-4 flex justify-center">O nas</h2>
         <div className="flex justify-center m-10">

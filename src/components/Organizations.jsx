@@ -25,7 +25,7 @@ function Organizations() {
   };
 
   return (
-    <div><h2 className="text-3xl mb-4 flex justify-center">Komu pomagamy?</h2><div className="flex justify-center m-10">
+    <div id="organizations"><h2 className="text-3xl mb-4 flex justify-center">Komu pomagamy?</h2><div className="flex justify-center m-10">
     <img src="../assets/Decoration.svg"></img>
   </div>
       <div className="flex justify-center mb-4">

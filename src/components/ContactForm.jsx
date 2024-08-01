@@ -2,7 +2,7 @@ import React from 'react';
 
 function ContactForm() {
   return (
-    <div className="container mx-auto my-8 flex items-center">
+    <div id="contact" className="container mx-auto my-8 flex items-center">
       <div
           className="left-0 top-0 w-1/2 h-full bg-cover bg-left"
           style={{ backgroundImage: "url('../assets/Background-Contact-Form.jpg')" }}

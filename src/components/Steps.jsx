@@ -32,7 +32,7 @@ function Steps() {
   ];
 
   return (
-    <div className="container mx-auto my-20">
+    <div id="steps" className="container mx-auto my-20">
       <h2 className="text-3xl text-center mb-8">Wystarczą 4 proste kroki</h2>
       <div className="flex justify-center">
         <img src="../assets/Decoration.svg"></img>
