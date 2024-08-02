@@ -72,7 +72,7 @@ const ContactForm = () => {
   return (
     <div
       id="contact"
-      className="relative max-w-8xl mx-auto mt-10 h-96 lg:h-auto bg-cover bg-center overflow-hidden"
+      className="relative max-w-8xl mx-auto mt-36 h-96 lg:h-auto bg-cover bg-center overflow-hidden"
       style={{
         height: "750px",
         backgroundImage: "url('../assets/Background-Contact-Form.jpg')",
